@@ -112,6 +112,11 @@ export const useProductsCrud = () => {
       });
     } catch (error) {
       console.log(error);
+      toast({
+        title: "Error",
+        description: `${error}`,
+        variant: "destructive",
+      });
     }
 
     setNewProduct(DEFAULT_VALUE_NEW_PRODUCT);
@@ -159,6 +164,11 @@ console.log(editingProduct);
       });
     } catch (error) {
       console.log(error);
+      toast({
+        title: "Error",
+        description: `${error}`,
+        variant: "destructive",
+      });
     }
   };
 
@@ -189,6 +199,11 @@ console.log(editingProduct);
       });
     } catch (error) {
       console.log(error);
+      toast({
+        title: "Error",
+        description: `${error}`,
+        variant: "destructive",
+      });
     }
   };
 
@@ -240,6 +255,11 @@ console.log(editingProduct);
       });
     } catch (error) {
       console.log(error);
+      toast({
+        title: "Error",
+        description: `${error}`,
+        variant: "destructive",
+      });
     }
     setNewCategory("");
   };
@@ -287,6 +307,11 @@ console.log(editingProduct);
       });
     } catch (error) {
       console.log(error);
+      toast({
+        title: "Error",
+        description: `${error}`,
+        variant: "destructive",
+      });
     }
 
     setIsEditing(false);
@@ -318,6 +343,11 @@ console.log(editingProduct);
       setresearchData((prev) => !prev);
     } catch (error) {
       console.log(error);
+      toast({
+        title: "Error",
+        description: `${error}`,
+        variant: "destructive",
+      });
     }
   };
 
